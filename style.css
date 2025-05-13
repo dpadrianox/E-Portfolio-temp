@@ -31,14 +31,18 @@ a {
     text-decoration: none;
 }
 .title {
-font-size: 90px;
-margin-bottom: 12px;
-text-align: left;
-line-height: 1.2;
+    font-size: 90px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1.2;
 }
 .orange {
     color: #007BFF !important;
 }
+button {
+    cursor: pointer;
+}
+
 
 /* 
 
@@ -86,7 +90,45 @@ LANDING PAGE
     border-radius: 50%;
     border: none;
     background-color: #242424;
+    color: white;
+    position: fixed;
+    bottom: 32px;
+    right: 40px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28)
 }
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scroll__icon {
+    width: 20px;
+    height: 30px;
+    border: 2px solid #242424;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll__icon:after {
+    background-color: #242424;
+    content: "";
+    width: 4px;
+    height: 6px;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate-reverse;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
 
 /* 
 
