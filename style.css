@@ -14,6 +14,9 @@ li {
 section {
     background-color: white;
 }
+.click {
+    transition: all 0.3s ease;
+}
 .click:hover {
     transform: scale(1.1);
 }
@@ -34,7 +37,7 @@ text-align: left;
 line-height: 1.2;
 }
 .orange {
-    color: #f06449 !important;
+    color: #007BFF !important;
 }
 
 /* 
@@ -65,7 +68,7 @@ LANDING PAGE
 }
 .social__link {
     font-size: 14px;
-    background-color: #f06449;
+    background-color: #007BFF;
     color: white;
     padding: 6px;
     width: 32px;
@@ -75,6 +78,14 @@ LANDING PAGE
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
 }
 
 /* 
