@@ -28,7 +28,7 @@
           <img id="personal-logo" src="./assets/DPA Logo2.png" alt="" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -49,11 +49,11 @@
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fa-solid fa-circle-half-stroke"></i
+              ><i class="fas fa-adjust"></i
             ></a>
           </li>
         </ul>
@@ -66,7 +66,7 @@
             I'm a beginner <b class="orange">front-end developer</b> passionate
             about building responsive and user-friendly websites.
             <br />
-            Here's a bit more <b class="orange">about me</b>.
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
           </p>
 
           <div class="social__links">
@@ -82,7 +82,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -116,6 +116,8 @@
             </div>
         </div>
         <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+
             <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
             <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h4>
             <form id="contact__form" onsubmit="contact(event)">
@@ -141,9 +143,7 @@
             <div class="modal__overlay modal__overlay--success">
                 Thanks for your message! Looking forward to connecting with you soon.
             </div>
-        </div>
-        <i class="fas fa-times modal__exit click"></i>
-      </div>
+
     </section>
     <section id="projects">
       <div class="container">
